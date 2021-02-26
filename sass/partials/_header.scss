@@ -1,0 +1,137 @@
+header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: map-get($colors, pink);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .logo a,
+    ul li a {
+      text-decoration: none;
+    }
+
+    i {
+      color: map-get($colors, white);
+    }
+
+    .logo-hamburger-container i,
+    .logo {
+      z-index: 2;
+    }
+
+    .logo-hamburger-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .logo-desktop {
+        @media only screen and (max-width: map-get(map-get($media, tablet), max-width)) {
+          display: none;
+        }
+      }
+
+      .logo-mobile {
+        @media only screen and (min-width: map-get(map-get($media, tablet), min-width)) {
+          display: none;
+        }
+      }
+    }
+
+    nav {
+      line-height: 170%;
+
+      @media only screen and (max-width: map-get(map-get($media, mobile), max-width)) {
+        display: none;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (min-width: map-get(map-get($media, mobile), max-width)) {
+          width: 40rem;
+        }
+
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+.nav-mobile-open {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: map-get($colors, black);
+  display: block !important;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 370%;
+    justify-content: center !important;
+    min-width: 100%;
+    height: 100vh;
+  }
+}
+
+.hamburger {
+  @media only screen and (min-width: map-get(map-get($media, mobile), min-width)) {
+    display: none;
+  }
+
+  .hamburger-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -2rem;
+
+    .line {
+      width: 2rem;
+      height: 0.2rem;
+      background: map-get($colors, white);
+      margin: 0.2rem 0;
+      z-index: 9999;
+    }
+
+    .hamburger-close-animation {
+      transform: rotate(90deg);
+      transition: 1s ease-in-out;
+      position: absolute;
+    }
+
+    .line0 {
+      transform: rotate(45deg);
+    }
+
+    .line1 {
+      opacity: 0;
+    }
+
+    .line2 {
+      transform: rotate(135deg);
+    }
+  }
+}
+
+.header-transparent-bg {
+  background: none !important;
+}
+
+.header-bg-scroll {
+  background: map-get($colors, black) !important;
+}

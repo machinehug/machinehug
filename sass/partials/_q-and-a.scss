@@ -1,0 +1,41 @@
+.speech-bubble-colored-wrapper {
+  display: flex;
+  align-items: center;
+
+  .speech-bubble-piece-left,
+  .speech-bubble {
+    background: map-get($colors, turquoise);
+  }
+
+  .speech-bubble-piece-left {
+    height: 2rem;
+    width: 2rem;
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    left: 2px;
+    position: relative;
+  }
+
+  .speech-bubble {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+}
+
+.speech-bubble {
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 10px;
+  background: map-get($colors, lightgrey);
+  margin: 1rem 0;
+  margin-left: auto;
+  user-select: none;
+}
+
+.speech-bubble-grey {
+  margin-right: 1.5rem;
+  width: max-content;
+}
+
+.speech-bubble-colored-text-center {
+  text-align: center;
+}

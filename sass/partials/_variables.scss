@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+$font-family-body: "Open Sans", sans-serif;
+$font-family-nav: "Nunito", sans-serif;
+$font-family-title: "Nunito", sans-serif;
+
+$fonts: (
+  family: (
+    title: $font-family-title,
+    body: $font-family-body,
+    nav: $font-family-nav,
+  ),
+  size: (
+    xs: 1rem,
+    s: 1.2rem,
+    m: 1.6rem,
+    l: 2rem,
+    xl: 2.3rem,
+    xxl: 3rem,
+    xxxl: 6rem,
+    xxxxl: 8rem,
+  ),
+);
+
+$colors: (
+  white: #fff,
+  black: #000,
+  pink: #ce92b7,
+  yellow: #ffcc00,
+  turquoise: turquoise,
+  grey: #868686,
+  darkgrey: #2c2c2c,
+  lightgrey: #ececec,
+  device-screen-border: #8c8c8c,
+  device-bg: #ff7c7c,
+  purple: #8585f1,
+  red: rgba(255, 0, 76, 0.76),
+  green: #4bff87,
+);
+
+$media: (
+  mobile: (
+    width: 392px,
+    max-width: 550px,
+    min-width: 551px,
+  ),
+  tablet: (
+    max-width: 768px,
+    min-width: 769px,
+  ),
+  desktop: (
+    min-width: 1028px,
+    min-width-medium: 1300px,
+    min-width-large: 1400px,
+  ),
+);
+
+$border: 3px solid map-get($colors, white);
+$border-radius: 20px;
+$shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.45);

@@ -1,0 +1,23 @@
+.top-container {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60rem;
+    justify-content: center;
+    padding-top: 1rem;
+
+    @media only screen and (min-width: map-get(map-get($media, mobile), width)) {
+      padding-top: 15rem;
+    }
+
+    .title {
+      padding-top: 6rem;
+      padding-right: 1.5rem;
+
+      @media only screen and (min-width: map-get(map-get($media, mobile), max-width)) {
+        padding-right: 5rem;
+        padding-top: 10rem;
+      }
+    }
+  }
+}

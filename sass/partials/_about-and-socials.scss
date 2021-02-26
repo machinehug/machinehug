@@ -1,0 +1,47 @@
+.about-socials-container {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+
+    @media only screen and (min-width: map-get(map-get($media, desktop), min-width)) {
+      max-width: 80rem;
+    }
+
+    .socials-container {
+      .screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    aside {
+      width: fit-content;
+
+      @media only screen and (min-width: map-get(map-get($media, desktop), min-width)) {
+        padding: 0 1rem;
+      }
+
+      .title {
+        padding-bottom: 3rem;
+      }
+
+      i {
+        font-size: 4rem;
+        color: map-get($colors, white);
+      }
+
+      a {
+        margin: 2rem;
+      }
+
+      .mail-container {
+        i {
+          font-size: 2rem;
+          color: map-get($colors, black);
+        }
+      }
+    }
+  }
+}

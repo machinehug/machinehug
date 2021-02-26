@@ -1,0 +1,106 @@
+[{
+            "id": 1,
+            "name": "Fram X",
+            "description": "Re-design of framx.no.",
+            "url": "https://machinehug.com/projects/fram-x",
+            "code": "https://github.com/machinehug/fram-x",
+            "img": "img/website-screenshots/desktop/fram-x.png",
+            "imgmobile": "img/website-screenshots/mobile/fram-x-mobile.png",
+            "type": "website",
+            "imgs": [{
+                "path": ""
+            }, {
+                "path": ""
+            }]
+        },
+        {
+            "id": 2,
+            "name": "Letha",
+            "description": "Practice creating a fake e-commerce website.",
+            "url": "https://machinehug.com/projects/letha",
+            "code": "https://github.com/machinehug/letha",
+            "img": "img/website-screenshots/desktop/letha.png",
+            "imgmobile": "img/website-screenshots/mobile/letha-mobile.png",
+            "type": "website",
+            "imgs": [{
+                "path": ""
+            }, {
+                "path": ""
+            }]
+        },
+        {
+            "id": 3,
+            "name": "Space X launch timeline microsite",
+            "description": "Space X launch timeline microsite.",
+            "url": "https://machinehug.com/projects/spacex-launch-timeline-microsite",
+            "code": "https://github.com/machinehug/spacex-launch-timeline-microsite",
+            "img": "img/website-screenshots/desktop/spacex-microsite.png",
+            "imgmobile": "img/website-screenshots/mobile/spacex-microsite-mobile.png",
+            "type": "microsite",
+            "imgs": [{
+                "path": ""
+            }, {
+                "path": ""
+            }]
+        },
+        {
+            "id": 4,
+            "name": "Nicecream",
+            "description": "Practice creating a fake e-commerce website.",
+            "url": "https://machinehug.com/projects/nicecream",
+            "code": "https://github.com/machinehug/nicecream",
+            "img": "img/website-screenshots/desktop/nicecream.png",
+            "imgmobile": "img/website-screenshots/mobile/nicecream-mobile.png",
+            "type": "website",
+            "imgs": [{
+                "path": ""
+            }, {
+                "path": ""
+            }]
+        },
+        {
+            "id": 5,
+            "name": "Reasons we are killing the planet and everyone on it",
+            "description": "One of the first websites I ever created.",
+            "url": "https://machinehug.com/projects/we-are-killing-the-planet",
+            "code": "https://github.com/machinehug/we-are-killing-the-planet",
+            "img": "img/website-screenshots/desktop/reasons-we-are.png",
+            "imgmobile": "img/website-screenshots/mobile/reasons-we-are-mobile.png",
+            "type": "website",
+            "imgs": [{
+                "path": ""
+            }, {
+                "path": ""
+            }]
+        },
+        {
+            "id": 6,
+            "name": "History of hairdressing",
+            "description": "One of the first websites I ever created.",
+            "url": "https://machinehug.com/projects/history-of-hairdressing",
+            "code": "https://github.com/machinehug/history-of-hairdressing",
+            "img": "img/website-screenshots/desktop/history-of-hairdressing.png",
+            "imgmobile": "img/website-screenshots/mobile/history-of-hairdressing-mobile.png",
+            "type": "website",
+            "imgs": [{
+                "path": ""
+            }, {
+                "path": ""
+            }]
+        },
+        {
+            "id": 7,
+            "name": "re-CYCLE",
+            "description": "One of the first websites I ever created.",
+            "url": "https://machinehug.com/projects/re-cycle",
+            "code": "https://github.com/machinehug/re-cycle",
+            "img": "img/website-screenshots/desktop/re-cycle.png",
+            "imgmobile": "img/website-screenshots/mobile/re-cycle-mobile.png",
+            "type": "website",
+            "imgs": [{
+                "path": ""
+            }, {
+                "path": ""
+            }]
+        }
+    ]

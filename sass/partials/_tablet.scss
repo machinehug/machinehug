@@ -1,0 +1,51 @@
+.tablet {
+  background-color: map-get($colors, black);
+  padding: 0.7rem 0.7rem 0.7rem 1rem;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  height: 70rem;
+  width: 137rem;
+  display: flex;
+  border-right: $border;
+  border-left: $border;
+  margin: 0 1rem;
+
+  .camera,
+  .button {
+    background: map-get($colors, darkgrey);
+  }
+
+  .screen {
+    width: 100%;
+    height: 100%;
+  }
+
+  .button-wrapper {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-left: 1rem;
+    width: 3.7rem;
+
+    .button {
+      height: 7rem;
+      width: 2.3rem;
+      border-radius: 5px;
+    }
+  }
+
+  .camera-wrapper {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    .camera {
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+  }
+}

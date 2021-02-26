@@ -1,0 +1,84 @@
+form {
+  div {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 0;
+
+    @media only screen and (max-width: map-get(map-get($media, desktop), min-width)) {
+      width: 100%;
+    }
+  }
+
+  div div {
+    display: flex;
+    flex-direction: column;
+    max-width: 32rem;
+
+    div {
+      display: block;
+    }
+  }
+
+  i {
+    font-size: 2.8rem;
+    padding-right: 1rem;
+    padding-top: 0.7rem;
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+}
+
+.mail-container {
+  background: map-get($colors, lightgrey);
+  max-width: 70rem;
+
+  @media only screen and (min-width: map-get(map-get($media, desktop), min-width)) {
+    margin-left: 20rem;
+    margin-top: 5rem;
+    position: absolute;
+    padding: 2rem 3rem 2.5rem 5rem;
+    border: $border;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: map-get(map-get($media, desktop), min-width)) {
+    padding: 0 1rem 0 1rem;
+  }
+
+  p {
+    padding: 0.6rem 0 1.2rem 0;
+  }
+
+  .subhead {
+    padding-top: 1rem;
+  }
+}
+
+input,
+textarea {
+  padding: 0.5rem 1rem;
+  border: 1px solid map-get($colors, grey);
+  width: 13rem;
+
+  @media only screen and (min-width: map-get(map-get($media, desktop), min-width)) {
+    width: 30rem;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.hide-on-desktop {
+  @media only screen and (max-width: map-get(map-get($media, desktop), min-width)) {
+    display: none !important;
+  }
+}
+
+.show-on-mobile {
+  @media only screen and (min-width: map-get(map-get($media, desktop), min-width)) {
+    display: none !important;
+  }
+}

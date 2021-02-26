@@ -1,0 +1,66 @@
+.phone {
+  background-color: map-get($colors, black);
+  padding: 1rem;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: $border;
+  border-bottom: $border;
+  margin: 0 1rem;
+  width: 20rem;
+  height: 44rem;
+
+  @media only screen and (min-width: map-get(map-get($media, desktop), min-width)) {
+    height: 60rem;
+    width: 26rem;
+  }
+
+  .camera,
+  .receiver,
+  .phone-button {
+    background: map-get($colors, darkgrey);
+  }
+
+  .camera-receiver-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 1rem;
+
+    .camera {
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      margin-left: 1.5rem;
+    }
+
+    .receiver {
+      width: 5rem;
+      height: 0.6rem;
+      border-radius: 3px;
+      margin-left: 3rem;
+    }
+  }
+
+  .screen {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    flex: auto;
+  }
+
+  .phone-button-wrapper {
+    justify-content: center;
+    display: flex;
+    padding-top: 1rem;
+
+    .phone-button {
+      height: 2rem;
+      width: 7rem;
+      border-radius: 5px;
+    }
+  }
+}

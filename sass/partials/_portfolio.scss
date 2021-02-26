@@ -1,0 +1,133 @@
+.portfolio-container {
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  .speech-bubble-colored-wrapper {
+    width: 20rem;
+    position: relative;
+    top: 92%;
+    left: 3%;
+
+    @media only screen and (max-width: map-get(map-get($media, mobile), max-width)) {
+      bottom: 0;
+      right: 0;
+    }
+
+    .speech-bubble-piece-left {
+      height: 4rem;
+      width: 4rem;
+    }
+
+    .speech-bubble {
+      padding: 1rem;
+
+      div {
+        padding: 0.6rem 0;
+      }
+    }
+
+    a {
+      color: map-get($colors, black);
+      text-decoration: none;
+    }
+
+    i {
+      background: map-get($colors, black);
+      border-radius: 30%;
+      padding: 0.7rem;
+      margin-right: 1rem;
+      font-size: 1.5rem;
+      color: map-get($colors, white);
+    }
+  }
+
+  .portfolio-device-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .phone-portfolio {
+    display: block;
+    margin: 0 auto;
+
+    @media only screen and (min-width: map-get(map-get($media, desktop), min-width)) {
+      display: none;
+    }
+
+    .portfolio-arrows-pics-container {
+      .next,
+      .prev {
+        margin: 4rem 0;
+      }
+
+      .next {
+        margin-left: -1.5rem;
+      }
+
+      .prev {
+        margin-left: 0.8rem;
+      }
+    }
+  }
+
+  .tablet-portfolio {
+    display: block;
+    max-width: 200rem;
+    margin: 0 auto;
+
+    @media only screen and (max-width: map-get(map-get($media, desktop), min-width)) {
+      display: none;
+    }
+  }
+}
+
+.portfolio-arrows-pics-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+
+  .prev,
+  .next {
+    border: solid map-get($colors, white);
+    cursor: pointer;
+    padding: 1rem;
+  }
+
+  .next {
+    transform: rotate(-45deg);
+    border-width: 0 1.4rem 1.5rem 0;
+  }
+
+  .prev {
+    transform: rotate(135deg);
+    border-width: 0 0.9rem 1.1rem 0;
+  }
+}
+
+.portfolio-container {
+  .phone-portfolio {
+    .screen {
+      overflow: inherit;
+      height: 95%;
+
+      .speech-bubble-colored-wrapper {
+        position: relative;
+        top: 96%;
+        left: 20%;
+      }
+    }
+
+    .phone-button {
+      display: none;
+    }
+  }
+}
+
+.portfolio-pic {
+  background-size: cover !important;
+  background-position: center !important;
+}

@@ -1,0 +1,111 @@
+:root {
+  // makes it easier to calculate: 62.5% = 10px / 1rem
+  font-size: 62.5%;
+}
+
+body {
+  font-size: map-get(map-get($fonts, size), s);
+  font-family: map-get(map-get($fonts, family), body);
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+.title,
+.subhead {
+  font-family: map-get(map-get($fonts, family), title);
+  margin: 0;
+}
+
+.title {
+  color: map-get($colors, yellow);
+  text-align: center;
+  font-size: map-get(map-get($fonts, size), xxl);
+}
+
+input,
+textarea {
+  font-family: map-get(map-get($fonts, family), body);
+  font-size: map-get(map-get($fonts, size), s);
+}
+
+.top-container {
+  .title {
+    text-align: left;
+    font-size: map-get(map-get($fonts, size), xxxl);
+
+    @media only screen and (min-width: map-get(map-get($media, desktop), min-width)) {
+      font-size: map-get(map-get($fonts, size), xxxxl);
+    }
+  }
+}
+
+.portfolio-container {
+  .title,
+  .subhead {
+    text-align: right;
+  }
+
+  .subhead {
+    color: map-get($colors, yellow);
+  }
+}
+
+.subhead {
+  text-align: left;
+  font-size: map-get(map-get($fonts, size), xl);
+}
+
+p {
+  line-height: 150%;
+  margin: 0;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: map-get(map-get($fonts, size), m);
+}
+
+.error,
+.submit-message {
+  font-size: map-get(map-get($fonts, size), s);
+}
+
+.error {
+  color: map-get($colors, white);
+}
+
+.submit-message {
+  a {
+    color: map-get($colors, red);
+  }
+}
+
+.mail-container .title {
+  color: map-get($colors, black);
+  font-size: map-get(map-get($fonts, size), xxl);
+}
+
+header .container {
+  font-family: map-get(map-get($fonts, family), nav);
+  font-size: map-get(map-get($fonts, size), m);
+
+  .logo a,
+  ul li a {
+    color: map-get($colors, white);
+  }
+}
+
+footer {
+  color: map-get($colors, lightgrey);
+  font-size: map-get(map-get($fonts, size), s);
+
+  a {
+    color: map-get($colors, white);
+  }
+}
+
+.speech-bubble-colored-wrapper {
+  font-family: map-get(map-get($fonts, family), title);
+}
